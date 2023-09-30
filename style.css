@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: monospace;
+    color-scheme: dark light;
+    accent-color: hotpink;
+    width: 100%;
+    height: 100%;
+    margin-inline: auto;
+}
+
+.current {
+    color:cornflowerblue;
+}
+
+p {
+    text-align: justify;
+    font-size: 100%;
+    color:white;
+    text-decoration: none; 
+}
+
+a {
+    text-align: justify;
+    font-size: 100%;
+    color:cornflowerblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px cornflowerblue;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template:
+        "nav music magazine" 1fr
+        "nav headline magazine" 1fr
+        "nav video magazine" 1fr
+        / 14rem 1fr 1fr;
+  
+    gap: 1rem;
+    place-items: stretch;
+}
+
+nav {
+    display: grid;
+    place-self: end;
+    place-items: start start;
+    grid-template-rows: auto 1fr;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 100;
+}
+
+h1 {
+    place-self: start;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 12rem;
+    line-height: 4rem;
+    font-weight: 100;
+}
+
+img {
+  overflow: hidden;
+  object-fit: contain;
+}
